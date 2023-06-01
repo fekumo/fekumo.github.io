@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Shop</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./E-App.css">
+</head>
+<body>
+    <header class='header'>
+        <nav id="topnav">
+            <div class="topnav">
+                <a href="#homebase">Home</a>
+                <a href="#info">About</a>
+                <a href="#shop">Shop</a>
+            </div>
+            <div id="cart">
+                <a href="#" onclick="openPopUp()"><i class='bx bx-cart' id="cartpic"></i></a>
+                <p id="counter"></p>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="homebase">
+            <div class="container" id="popup">
+                <div id="root"></div>
+                <div class="sidebar">
+                    <div class="head"><p>My Cart</p></div>
+                    <div id="cartItem">Your cart is empty</div>
+                    <div class="foot">
+                        <h3>Total</h3>
+                        <h2>₦0.00</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="./Project Files/Images/heroImage.png" alt="An image of a gadget hub" id="ems">
+        </div>
+        <div id="shopnow">
+            <a href="#shop"><button id="sn">Shop Now</button></a>
+        </div>
+    </section>
+    <section >
+        <div id="info">
+            <p>Our online store is home to some of the best and most recent gadget we believe every millenial and Gen Z should
+                have today. We offer a variety of mobile devices such as IPhones and Andriods, Laptops, Smartwatches, Games and other digital gagets.
+                Explore all our gadgets and we are sure that you will find something that suits you.
+            </p>
+        </div>
+        <div id="socials">
+            <a href=""><i class='bx bxl-facebook-circle'></i></a>
+            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+            <a href=""><i class='bx bxl-twitter' ></i></a>
+            <a href=""><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
+    </section>
+    <section style="background-color: rgb(51, 51, 51);">   
+        <div id="shop">
+            <h1 id="gad" style="height: 50px;">OUR GADGETS</h1>
+        </div>
+        <div class="solditems">
+            <div id="blurring">
+                <div>
+                    <h4 class="blurred">₦500,000</h4>
+                </div>
+                <img src="./Project Files/Images/product1.png" alt="" id="blurredimg">
+                <h4 id="sold">Samsung</h4>
+                <button type="submit" class="addcart" onclick="AddToCart()">Add To Cart</button>
+            </div>
+            <div id="blurring">
+                    <div>
+                        <h4 class="blurred">₦250,000</h4>
+                    </div>
+                    <img src="./Project Files/Images/product2.png" alt="">
+                    <h4 id="sold">Pixel 4a</h4>
+                    <button class="addcart" onclick="AddToCart()">Add To cart</button>
+            </div>
+            <div id="blurring">
+                    <div>
+                        <h4 class="blurred">₦300,000</h4>
+                    </div>
+                    <img src="./Project Files/Images/product3.png" alt="">
+                    <h4 id="sold">PS 5</h4>
+                    <button class="addcart" onclick="AddToCart()">Add To Cart</button>
+            </div>
+            <div id="blurring">
+                    <div>
+                        <h4 class="blurred">₦800,000</h4>
+                    </div>
+                    <img src="./Project Files/Images/product4.png" alt="">
+                    <h4 id="sold">MacBook Air</h4>
+                    <button class="addcart" onclick="AddToCart()">Add To Cart</button>
+            </div>
+            <div id="blurring">
+                    <div>
+                        <h4 class="blurred">₦95,000</h4>
+                    </div>
+                    <img src="./Project Files/Images/product5.png" alt="">
+                    <h4 id="sold">Smart Watches</h4>
+                    <button class="addcart" onclick="AddToCart()">Add to cart</button>
+            </div>
+            <div id="blurring">
+                    <div>
+                        <h4 class="blurred">₦75,000</h4>
+                    </div>
+                    <img src="./Project Files/Images/product6.png" alt="">
+                    <h4 id="sold">AirPods</h4>
+                    <button class="addcart" onclick="AddToCart()">Add To Cart</button>
+            </div>
+        </div>
+    </section>
+    <footer id="footing">
+        <img src="./Project Files/Images/EMS.svg" alt="" id="footpic">
+        <h6 class="foottext">Developed by Simon Fekumo</h6>
+    </footer>
+        <div></div>
+        <div>
+            <script src="https://js.paystack.co/v1/inline.js"></script>
+            <script src="./E-App.js"></script>
+            <script src="./Cart.js"></script>
+        </div>
+</body>
+</html>
